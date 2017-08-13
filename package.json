@@ -1,0 +1,10 @@
+{
+  "name": "protractor",
+  "version": "1.0.0",
+  "dependencies": {
+    "protractor": "5.1.2"
+  },
+  "devDependencies": {
+    "protractor-jasmine2-html-reporter": "0.0.7"
+  }
+}

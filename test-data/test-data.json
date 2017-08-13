@@ -1,0 +1,44 @@
+{
+  "customer": {
+    "email": "ryanair.test@yahoo.com",
+    "application_password": "*********",
+    "username": "ryanair",
+    "title": "Mr",
+    "name": "John",
+    "surname": "Doe"
+  },
+  "flight": {
+    "from": {
+      "airportCode": "WRO",
+      "airportCountry": "Poland",
+      "airportCity": "Wroclaw"
+    },
+    "to": {
+      "airportCode": "LIS",
+      "airportCountry": "Portugal",
+      "airportCity": "Lisbon"
+    },
+    "date": "09-09-2017",
+    "fare": "standard"
+  },
+  "order": {
+    "passenger": {
+      "title": "Mr",
+      "name": "someName",
+      "surname": "someSurname"
+    },
+    "billingAddress": {
+      "address1": "some_address_1",
+      "city": "Wroclaw",
+      "postalCode": "50-874"
+    }
+  },
+  "card": {
+    "number": "5555555555555557",
+    "type": "MasterCard",
+    "expiryMonth": "5",
+    "expiryYear": "2019",
+    "cvv": "159",
+    "holderName": "someHolder"
+  }
+}
