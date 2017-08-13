@@ -38,12 +38,19 @@ var PaymentPage = function() {
     browser.waitForAngularEnabled(true);
   };
 
-  this.getErrorMessageText = function() {
+  this.getErrorMessage = function() {
     browser.waitForAngularEnabled(false);
     browser.sleep(constants.PAYMENTS_PAGE_HARDCODED_TIMEOUT);
     var messageDisplayed = browser.driver.findElement(by.css('.info-title'));
     browser.waitForAngularEnabled(true);
     return messageDisplayed.getText();
+  };
+
+  this.getPaymentErrorDetails = function() {
+    browser.waitForAngularEnabled(false);
+    var detailsDisplayed = browser.driver.findElement(by.css("div[translate='common.components.payment_forms.error_explain_declined']"));
+    browser.waitForAngularEnabled(true);
+    return detailsDisplayed.getText();
   };
 };
 
