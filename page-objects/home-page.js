@@ -36,10 +36,10 @@ var HomePage = function() {
     }
 
     var countryElement = element(by.cssContainingText('div.core-list-item', destinationCountry));
-    scrollElementIntoViewAndClick(countryElement)
+    scrollElementIntoViewAndClick(countryElement);
 
     var cityElement = element(by.cssContainingText('span', destinationCity));
-    scrollElementIntoViewAndClick(cityElement)
+    scrollElementIntoViewAndClick(cityElement);
   };
 
   this.selectOneWayTrip = function() {
@@ -48,7 +48,7 @@ var HomePage = function() {
 
   this.selectFlyOutDate = function(date) {
     var flyOutDateInput = element(by.model('dateRange.startDate'));
-    flyOutDateInput.click()
+    flyOutDateInput.click();
     element(by.css("[data-id='" + date + "']")).click();
   };
 

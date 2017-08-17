@@ -6,7 +6,7 @@ var BookingDetailsPage = function() {
     return browser.wait(function() {
       return browser.getCurrentUrl().then(function(url) {
         return /booking/.test(url);
-      })
+      });
     }, constants.CUSTOM_WAIT_TIMEOUT, "[ERROR] URL is not changed to booking page");
   };
 
