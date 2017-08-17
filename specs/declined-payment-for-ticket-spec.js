@@ -45,6 +45,6 @@ describe('declined payment attempt', function() {
                                    data.order.billingAddress.postalCode);
     paymentPage.acceptTermsAndPay();
     expect(paymentPage.getErrorMessage()).toEqual('Oh. There was a problem');
-    expect(paymentPage.getPaymentErrorDetails()).toContain('your payment was not authorised')
+    expect(paymentPage.getPaymentErrorDetails()).toContain('your payment was not authorised');
   });
 });
