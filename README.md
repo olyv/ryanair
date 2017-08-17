@@ -8,3 +8,5 @@ To run tests:
 3. Execute `webdriver-manager update` and then start Selenium Server with `webdriver-manager start`
 4. Run tests with `protractor conf.js`
 5. When execution is completed, find reports under generated _reports_ directory  :tada:
+
+For jshint refer to http://jshint.com

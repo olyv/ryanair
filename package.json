@@ -5,6 +5,7 @@
     "protractor": "5.1.2"
   },
   "devDependencies": {
+    "jshint": "^2.9.5",
     "protractor-jasmine2-html-reporter": "0.0.7"
   }
 }
