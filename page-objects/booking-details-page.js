@@ -15,6 +15,14 @@ var BookingDetailsPage = function() {
     browser.wait(protractor.ExpectedConditions.presenceOf(fromPriceButton), constants.CUSTOM_WAIT_TIMEOUT);
     fromPriceButton.click();
 
+    getSelectFareButton(fareType).click();
+  };
+
+  this.clickContinueWhenFareIsSelected = function() {
+    element(by.css('#continue')).click();
+  };
+
+  getSelectFareButton = function(fareType) {
     var selectFareButton;
     if (fareType == "standard") {
         selectFareButton = element(by.css("div.standard #continue"));
@@ -23,13 +31,9 @@ var BookingDetailsPage = function() {
     } else if (fareType == "business") {
       selectFareButton = element(by.css("div.business-plus #continue"));
     } else {
-      console.log("[ERROR] clickSelectFare(): please check value of passed argument: " + fareType);
+      throw "[ERROR] clickSelectFare(): please check value of passed argument: " + fareType;
     }
-    selectFareButton.click();
-  };
-
-  this.clickContinueWhenFareIsSelected = function() {
-    element(by.css('#continue')).click();
+    return selectFareButton;
   };
 };
 
